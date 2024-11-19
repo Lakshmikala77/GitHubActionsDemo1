@@ -1,13 +1,8 @@
-name: Greetings
-'on':
-  - pull_request_target
-  - issues
+name: hello-world
+on: push
 jobs:
-  greeting:
+  my-job:
     runs-on: ubuntu-latest
-    permissions:
-      issues: write
-      pull-requests: write
     steps:
       - name: my-step
-        run: echo "Hello World"
+        run: echo "Hello World!"
